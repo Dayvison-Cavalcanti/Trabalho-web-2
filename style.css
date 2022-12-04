@@ -76,7 +76,7 @@
 }
 
 #divUl #edit{
-    right: 8rem;
+    right: 20rem;
     background: none;
     border: none;
     position: fixed; 
@@ -90,7 +90,7 @@
 }
 
 #divUl #del {
-    right: 0rem;
+    right: 12rem;
     margin-right: 3rem;
     background: none;
     border: none;
