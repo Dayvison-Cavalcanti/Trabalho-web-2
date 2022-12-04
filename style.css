@@ -1,0 +1,107 @@
+* {
+    background-color: black;
+    color: brown;
+    margin: 0;
+}
+
+.container {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   margin-top: 1rem;
+}
+
+.backgroundG {
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 53%);
+}
+
+.backgroundN{
+    background: none;
+}
+
+.div2 button{
+    border: none;
+    background: none;
+    position: relative;
+    top: 0.6rem;
+  
+}
+
+.div1 {
+    display: flex;
+    justify-content: center;
+}
+
+.div1 h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    border: #fefefe double 0.2rem;
+    width: 50rem;
+    padding: 1rem;
+}
+
+.div2 form {
+    border: #ffffff double 0.2rem;
+    width: 50rem;
+    padding: 1rem; 
+}
+
+.div2 input {
+    width: 25rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    background-color: aliceblue;
+    color: brown;
+}
+
+#divUl {
+    border: #ffffff double 0.2rem;
+    width: 50rem;
+    padding: 1rem;  
+}
+
+#divUl p {
+    margin: 0.5rem;
+    padding: 0.3rem;
+    border: #ffffff solid 0.1rem;
+    display: flex;
+    justify-content: space-between;  
+}
+
+#divUl p span {
+    padding: 0.2rem;
+    font-size: 1.2rem;
+    width: 30rem;
+}
+
+#divUl #edit{
+    right: 8rem;
+    background: none;
+    border: none;
+    position: fixed; 
+}
+#divUl #edit img{
+   width: 4rem; 
+   background: none;
+   position: relative;
+   bottom: 0.2rem;
+
+}
+
+#divUl #del {
+    right: 0rem;
+    margin-right: 3rem;
+    background: none;
+    border: none;
+    position: fixed;
+}
+#divUl #del img {
+ background: none;
+ width: 4rem;
+ position: relative;
+ bottom: 0.2rem;
+}
+
+
+
