@@ -43,6 +43,7 @@ function criarBotao (p){
 // ---------------------------------------------------------------------------------------
 const botEnviar = document.getElementById('enviar');
 function editar (edit){
+    event.preventDefault()
     botEnviar.setAttribute("onclick", 'novoT()')
     const idP = edit.parentElement.id
     const texto = document.getElementById(idP)
@@ -53,14 +54,20 @@ function editar (edit){
 };
 //----------------------------------------------------------------------------------------
 function novoT(){
+    event.preventDefault()
     const novoTexto = document.getElementById('texto').value
-    let idSp = localStorage.getItem('id')
-    const textoSpan = document.querySelector('#'+idSp)
-    textoSpan.innerText = novoTexto
-    console.log(novoTexto)
-    document.getElementById('texto').value=''
-    localStorage.removeItem('id')
-    botEnviar.setAttribute('onclick', 'capturar()')
+    if (novoTexto != ""){
+
+        let idSp = localStorage.getItem('id')
+        const textoSpan = document.querySelector('#'+idSp)
+        textoSpan.innerText = novoTexto
+        console.log(novoTexto)
+        document.getElementById('texto').value=''
+        localStorage.removeItem('id')
+        botEnviar.setAttribute('onclick', 'capturar()')
+    }else{
+        alert('preencha o campo')
+    }
 }
 
 //----------------------------------------------------------------------------------------
